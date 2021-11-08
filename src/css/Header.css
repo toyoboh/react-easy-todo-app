@@ -1,0 +1,31 @@
+.header {
+    padding: 16px;
+    border-bottom: 1px solid gray;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__appName {
+    flex: 0.5;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__userName {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__userName > .MuiSvgIcon-root {
+    margin-right: 5px;
+}
