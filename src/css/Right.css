@@ -1,0 +1,50 @@
+.right {
+    flex: 0.3;
+    min-width: 300px;
+    /* background-color: #ff0000; */
+    padding: 20px 10px;
+}
+
+.right__form > .form__itemTitle {
+    margin-bottom: 4px;
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.right__form > .form__itemBox {
+    margin-bottom: 18px;
+}
+
+.right__form > .form__registerButton {
+    margin-top: 36px;
+}
+
+.right__form > .form__itemBox > .form__input {
+    border: 1px solid gray;
+    padding: 6px;
+    width: 100%;
+}
+
+.right__form > .form__itemBox > .form__textarea {
+    border: 1px solid gray;
+    height: 150px;
+    padding: 6px;
+    width: 100%;
+}
+
+.right__form > .form__registerButton {
+    border: 1px solid gray;
+    border-radius: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right__form > .form__registerButton > .MuiSvgIcon-root {
+    margin-right: 4px;
+    font-size: 20px;
+}
