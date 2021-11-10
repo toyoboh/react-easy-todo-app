@@ -6,6 +6,20 @@ function Main() {
 
     const [tasks, setTasks] = useState([]);
 
+    const taskDelete = (task_id) => {
+        console.log(task_id);
+        const tasksCount = tasks.length;
+        for(let i = 0; i < tasksCount; i++ ) {
+            if(tasks[i].task_id === task_id) {
+                const tmpTasks = tasks.splice(i);
+                console.log(tmpTasks);
+                console.log(i);
+                setTasks(tmpTasks);
+                break;
+            }
+        }
+    }
+
     useEffect(() => {
         const initialTasks = [
             {
@@ -51,6 +65,7 @@ function Main() {
                         is_end={ task.is_enf }
                         is_delete={ task.is_delete }
                         key={ task.task_id }
+                        taskDelete={ taskDelete }
                     />
                 ))
             }

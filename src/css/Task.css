@@ -1,4 +1,70 @@
 .task {
     border: 1px solid gray;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
+    padding: 14px;
+}
+
+.task > div:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.task__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task__buttons {
+    flex: 0.5;
+    display: flex;
+    color: white;
+}
+
+.task__buttons > div {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.task__buttons > div > .MuiSvgIcon-root {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.task__buttons > .end {
+    flex: 0.45;
+    background-color: rgb(73, 220, 73);
+}
+
+.task__buttons > .delete {
+    margin-right: 0;
+    margin-left: auto;
+    flex: 0.45;
+    background-color: rgb(255, 113, 137);
+}
+
+.task__endDate {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.task__endDate > .date {
+    font-size: 14px;
+    color: green;
+    font-weight: 600;
+}
+
+.task__item {
+    display: flex;
+}
+
+.task__itemTitle {
+    flex: 0.2;
+}
+
+.task__itemContent {
+    flex: 0.8;
 }

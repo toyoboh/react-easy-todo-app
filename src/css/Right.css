@@ -5,11 +5,17 @@
     padding: 20px 10px;
 }
 
+.right__wrapper {
+    position: sticky;
+    top: 77px;
+}
+
 .right__form > .form__itemTitle {
     margin-bottom: 4px;
     color: black;
     font-size: 14px;
     font-weight: 200;
+    
 }
 
 .right__form > .form__itemBox {
@@ -34,7 +40,6 @@
 }
 
 .right__form > .form__registerButton {
-    border: 1px solid gray;
     border-radius: 21px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -42,6 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(103, 156, 255);
+    color: white;
 }
 
 .right__form > .form__registerButton > .MuiSvgIcon-root {
